@@ -1,0 +1,117 @@
+
+header{
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    text-shadow: 0.05em 0 0 #F4BBBB,
+	-0.025em -0.05em 0 #C3E5AE,
+	0.025em 0.05em 0 #557571;
+	animation: glitch 2000ms infinite;
+}
+@keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 #F4BBBB,
+        -0.05em -0.025em 0 #C3E5AE,
+        -0.025em 0.05em 0 #557571;
+    }
+  
+    15% {
+      text-shadow: -0.05em -0.025em 0 #F4BBBB,
+        0.025em 0.025em 0 #C3E5AE,
+        -0.05em -0.05em 0 #557571;
+    }
+  
+    50% {
+      text-shadow: 0.025em 0.05em 0 #F4BBBB,
+        0.05em 0 0 #C3E5AE,
+        0 -0.05em 0 #557571;
+    }
+  
+    100% {
+      text-shadow: -0.025em 0 0 #F4BBBB,
+        -0.025em -0.025em 0 #C3E5AE,
+        -0.025em -0.05em 0 #557571;
+    }
+  }
+.games{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+    #explode{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 40%;
+        height: 80vh;
+        background-image:url("img/10s.PNG");
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+    }
+        #explode:hover{
+            width: 45%;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            height: 80vh;
+            background-color: brown;
+        }
+    #digglet{
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 40%;
+        height: 80vh;
+        background-image:url("img/topo2.png");
+        background-position: center;
+        background-size: cover;
+        border-radius: 20px;
+    }
+        #digglet:hover{
+            width: 45%;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            height: 80vh;
+            background-color: brown;
+    }
+@media (max-width: 600px){
+ .games{
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+ }
+ #explode{
+    margin-left: 5%;
+    width: 90%;
+    height: 60vh;
+    background-image:url("img/10s.PNG");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+    #explode:hover{
+        width: 95%;
+        margin-left: 2.5%;
+        height: 65vh;
+        background-color: brown;
+    }
+#digglet{
+    margin-left: 5%;
+    width: 90%;
+    height: 80vh;
+    background-image:url("img/topo2.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+    #digglet:hover{
+        width: 95%;
+        margin-left: 2.5%;
+        height: 80vh;
+        background-color: brown;
+}
+
+}
